@@ -1,0 +1,805 @@
+{
+    "items": [
+      {
+        "id": "1",
+        "name": "Modern Leather Sofa",
+        "description": "A sleek and stylish leather sofa perfect for contemporary living rooms.",
+        "category": "Sofas",
+        "price": "$999",
+        "image": "./assets/sofa1.png"
+      },
+      {
+        "id": "2",
+        "name": "Vintage Wooden Dining Table",
+        "description": "A beautifully crafted wooden dining table with a rustic vintage look.",
+        "category": "Dining Tables",
+        "price": "$799",
+        "image": "https://i.pinimg.com/236x/6d/80/b2/6d80b23503bd913e2b48d1738454dd79.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Mid-Century Armchair",
+        "description": "An iconic mid-century armchair featuring clean lines and comfortable cushioning.",
+        "category": "Chairs",
+        "price": "$499",
+        "image": "https://m.media-amazon.com/images/I/61kIgVBHqNL._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Industrial Style Bookshelf",
+        "description": "A sturdy bookshelf with an industrial design, perfect for displaying books and decor items.",
+        "category": "Bookshelves",
+        "price": "$349",
+        "image": "https://m.media-amazon.com/images/I/61uTBycM8lL.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Contemporary Glass Coffee Table",
+        "description": "A modern glass coffee table with a minimalist design, ideal for small living rooms.",
+        "category": "Coffee Tables",
+        "price": "$249",
+        "image": "https://pyxis.nymag.com/v1/imgs/58c/11c/22863719175b052151cbb52937ad7c338e-CoffeeTables-329.1x.rsquare.w1400.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Scandinavian Style Bed Frame",
+        "description": "A simple yet elegant bed frame inspired by Scandinavian design principles.",
+        "category": "Beds",
+        "price": "$699",
+        "image": "https://example.com/images/bed1.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Antique Brass Floor Lamp",
+        "description": "An antique brass floor lamp with a timeless design, perfect for adding ambiance to any room.",
+        "category": "Lamps",
+        "price": "$179",
+        "image": "https://example.com/images/lamp1.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Rattan Outdoor Lounge Set",
+        "description": "A comfortable outdoor lounge set made of rattan, ideal for patio or garden spaces.",
+        "category": "Outdoor Furniture",
+        "price": "$1299",
+        "image": "https://example.com/images/outdoor1.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Velvet Upholstered Bar Stool",
+        "description": "A luxurious velvet upholstered bar stool with a modern design, perfect for kitchen islands or bars.",
+        "category": "Bar Stools",
+        "price": "$149",
+        "image": "https://example.com/images/stool1.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Wall-Mounted Floating Shelves",
+        "description": "A set of minimalist wall-mounted floating shelves, ideal for displaying decorative items.",
+        "category": "Shelves",
+        "price": "$59",
+        "image": "https://example.com/images/shelf1.jpg"
+      },
+      {
+        "id": "11",
+        "name": "Velvet Chesterfield Sofa",
+        "description": "A luxurious velvet Chesterfield sofa with classic tufted detailing, perfect for elegant living rooms.",
+        "category": "Sofas",
+        "price": "$1499",
+        "image": "./assets/sofa2.png"
+      },
+      {
+        "id": "12",
+        "name": "Marble Top Dining Table",
+        "description": "A stunning dining table with a marble top and sturdy wooden legs, adding a touch of luxury to any dining space.",
+        "category": "Dining Tables",
+        "price": "$1299",
+        "image": "https://example.com/images/table2.jpg"
+      },
+      {
+        "id": "13",
+        "name": "Eames Lounge Chair",
+        "description": "An iconic lounge chair designed by Charles and Ray Eames, known for its timeless style and unparalleled comfort.",
+        "category": "Chairs",
+        "price": "$1799",
+        "image": "https://example.com/images/chair2.jpg"
+      },
+      {
+        "id": "14",
+        "name": "Modern White Bookcase",
+        "description": "A sleek and minimalist white bookcase with adjustable shelves, perfect for organizing books and decor items.",
+        "category": "Bookshelves",
+        "price": "$599",
+        "image": "https://example.com/images/bookshelf2.jpg"
+      },
+      {
+        "id": "15",
+        "name": "Glass Top Side Table",
+        "description": "A contemporary side table with a tempered glass top and metal frame, adding a touch of sophistication to any room.",
+        "category": "Side Tables",
+        "price": "$199",
+        "image": "https://example.com/images/side_table1.jpg"
+      },
+      {
+        "id": "16",
+        "name": "Platform Storage Bed",
+        "description": "A modern platform bed with built-in storage drawers, maximizing space in the bedroom while maintaining a clean look.",
+        "category": "Beds",
+        "price": "$899",
+        "image": "https://example.com/images/bed2.jpg"
+      },
+      {
+        "id": "17",
+        "name": "Adjustable Floor Lamp",
+        "description": "A sleek and adjustable floor lamp with a contemporary design, providing versatile lighting options for any room.",
+        "category": "Lamps",
+        "price": "$249",
+        "image": "https://example.com/images/lamp2.jpg"
+      },
+      {
+        "id": "18",
+        "name": "Wicker Outdoor Dining Set",
+        "description": "A stylish outdoor dining set made of durable wicker material, perfect for alfresco dining and entertaining guests.",
+        "category": "Outdoor Furniture",
+        "price": "$1599",
+        "image": "https://example.com/images/outdoor2.jpg"
+      },
+      {
+        "id": "19",
+        "name": "Industrial Bar Table",
+        "description": "A rugged industrial-style bar table with a reclaimed wood top and metal legs, adding character to any bar or kitchen area.",
+        "category": "Bar Tables",
+        "price": "$349",
+        "image": "https://example.com/images/bar_table1.jpg"
+      },
+      {
+        "id": "20",
+        "name": "Wall-Mounted Coat Rack",
+        "description": "A space-saving wall-mounted coat rack with hooks and shelves, perfect for organizing entryways or mudrooms.",
+        "category": "Coat Racks",
+        "price": "$79",
+        "image": "https://example.com/images/coat_rack1.jpg"
+      },
+      {
+        "id": "21",
+        "name": "Leather Recliner Armchair",
+        "description": "A comfortable leather recliner armchair with plush cushioning, perfect for relaxation and lounging.",
+        "category": "Armchairs",
+        "price": "$899",
+        "image": "https://example.com/images/armchair1.jpg"
+      },
+      {
+        "id": "22",
+        "name": "Marble Top Coffee Table",
+        "description": "A luxurious coffee table with a marble top and gold-finished metal legs, adding elegance to any living room.",
+        "category": "Coffee Tables",
+        "price": "$999",
+        "image": "https://example.com/images/coffee_table2.jpg"
+      },
+      {
+        "id": "23",
+        "name": "Antique Writing Desk",
+        "description": "An exquisite antique writing desk with intricate woodwork and multiple drawers, perfect for a home office or study.",
+        "category": "Desks",
+        "price": "$1499",
+        "image": "https://example.com/images/desk1.jpg"
+      },
+      {
+        "id": "24",
+        "name": "Velvet Accent Chair",
+        "description": "A stylish velvet accent chair with a curved backrest and tapered legs, adding a pop of color to any room.",
+        "category": "Chairs",
+        "price": "$599",
+        "image": "https://example.com/images/chair3.jpg"
+      },
+      {
+        "id": "25",
+        "name": "Industrial Pipe Bookshelf",
+        "description": "A unique bookshelf made of industrial pipes and reclaimed wood, blending modern and rustic elements seamlessly.",
+        "category": "Bookshelves",
+        "price": "$799",
+        "image": "https://example.com/images/bookshelf3.jpg"
+      },
+      {
+        "id": "26",
+        "name": "Glass Top Console Table",
+        "description": "A sleek console table with a tempered glass top and metal frame, perfect for entryways or behind sofas.",
+        "category": "Console Tables",
+        "price": "$349",
+        "image": "https://example.com/images/console_table1.jpg"
+      },
+      {
+        "id": "27",
+        "name": "Upholstered Platform Bed",
+        "description": "A modern platform bed with upholstered headboard and sleek design, bringing comfort and style to the bedroom.",
+        "category": "Beds",
+        "price": "$1199",
+        "image": "https://example.com/images/bed3.jpg"
+      },
+      {
+        "id": "28",
+        "name": "Modern Pendant Light",
+        "description": "A contemporary pendant light with geometric shapes and adjustable height, adding a statement to any room.",
+        "category": "Lighting",
+        "price": "$299",
+        "image": "https://example.com/images/light1.jpg"
+      },
+      {
+        "id": "29",
+        "name": "Wicker Patio Sofa Set",
+        "description": "A comfortable patio sofa set made of wicker with plush cushions, perfect for outdoor relaxation and entertaining.",
+        "category": "Outdoor Furniture",
+        "price": "$1999",
+        "image": "https://example.com/images/patio_sofa_set1.jpg"
+      },
+      {
+        "id": "30",
+        "name": "Rustic Farmhouse Dining Table",
+        "description": "A charming farmhouse dining table with distressed wood finish and turned legs, creating a cozy dining atmosphere.",
+        "category": "Dining Tables",
+        "price": "$899",
+        "image": "https://example.com/images/table3.jpg"
+      },
+      {
+        "id": "31",
+        "name": "Tufted Ottoman Pouf",
+        "description": "A versatile tufted ottoman pouf that can be used as a footrest, extra seating, or a decorative accent.",
+        "category": "Ottomans",
+        "price": "$149",
+        "image": "https://example.com/images/ottoman1.jpg"
+      },
+      {
+        "id": "32",
+        "name": "Vintage Brass Floor Mirror",
+        "description": "An elegant floor mirror with a vintage brass frame, adding depth and style to any room.",
+        "category": "Mirrors",
+        "price": "$699",
+        "image": "https://example.com/images/mirror1.jpg"
+      },
+      {
+        "id": "33",
+        "name": "Mid-Century Modern Sideboard",
+        "description": "A stylish mid-century modern sideboard with tapered legs and ample storage space, perfect for dining rooms or living areas.",
+        "category": "Sideboards",
+        "price": "$1299",
+        "image": "https://example.com/images/sideboard1.jpg"
+      },
+      {
+        "id": "34",
+        "name": "Velvet Upholstered Bench",
+        "description": "A luxurious velvet upholstered bench with button tufting and tapered legs, adding elegance to entryways or bedrooms.",
+        "category": "Benches",
+        "price": "$399",
+        "image": "https://example.com/images/bench1.jpg"
+      },
+      {
+        "id": "35",
+        "name": "Modern Wall Shelf Set",
+        "description": "A set of modern wall shelves with clean lines and floating design, perfect for displaying books, plants, or decor items.",
+        "category": "Shelves",
+        "price": "$99",
+        "image": "https://example.com/images/shelf2.jpg"
+      },
+      {
+        "id": "36",
+        "name": "Industrial Swivel Bar Stool",
+        "description": "A rugged industrial-style bar stool with a swivel seat and adjustable height, perfect for kitchen islands or bars.",
+        "category": "Bar Stools",
+        "price": "$129",
+        "image": "https://example.com/images/stool2.jpg"
+      },
+      {
+        "id": "37",
+        "name": "Velvet Upholstered Loveseat",
+        "description": "A stylish velvet upholstered loveseat with a curved backrest and tapered legs, perfect for small living rooms or seating areas.",
+        "category": "Loveseats",
+        "price": "$799",
+        "image": "https://example.com/images/loveseat1.jpg"
+      },
+      {
+        "id": "38",
+        "name": "Rattan Hanging Chair",
+        "description": "A trendy rattan hanging chair with a comfortable cushion, perfect for creating a cozy outdoor or indoor retreat.",
+        "category": "Chairs",
+        "price": "$499",
+        "image": "https://example.com/images/hanging_chair1.jpg"
+      },
+      {
+        "id": "39",
+        "name": "Marble Top Kitchen Island",
+        "description": "A spacious kitchen island with a marble top and storage shelves, providing extra workspace and storage in the kitchen.",
+        "category": "Kitchen Islands",
+        "price": "$999",
+        "image": "https://example.com/images/kitchen_island1.jpg"
+      },
+      {
+        "id": "40",
+        "name": "Vintage Brass Table Lamp",
+        "description": "A vintage-inspired table lamp with a brass finish and decorative details, adding charm to bedside tables or desks.",
+        "category": "Lamps",
+        "price": "$149",
+        "image": "https://example.com/images/table_lamp1.jpg"
+      },
+      {
+        "id": "41",
+        "name": "Modern Leather Sectional Sofa",
+        "description": "A sleek and spacious leather sectional sofa with adjustable headrests, perfect for lounging and entertaining guests.",
+        "category": "Sofas",
+        "price": "$1999",
+        "image": "./assets/sofa3.png"
+      },
+      {
+        "id": "42",
+        "name": "Glass Top Dining Table with Metal Legs",
+        "description": "A contemporary dining table with a tempered glass top and metal legs, combining style and durability for modern dining spaces.",
+        "category": "Dining Tables",
+        "price": "$899",
+        "image": "https://example.com/images/table4.jpg"
+      },
+      {
+        "id": "43",
+        "name": "Ergonomic Office Chair",
+        "description": "An ergonomic office chair with lumbar support and adjustable features, providing comfort and support during long work hours.",
+        "category": "Office Chairs",
+        "price": "$349",
+        "image": "https://example.com/images/chair4.jpg"
+      },
+      {
+        "id": "44",
+        "name": "Floating Wall TV Stand",
+        "description": "A space-saving floating wall TV stand with storage compartments and cable management, perfect for modern entertainment setups.",
+        "category": "TV Stands",
+        "price": "$299",
+        "image": "https://example.com/images/tv_stand1.jpg"
+      },
+      {
+        "id": "45",
+        "name": "Mid-Century Modern Side Table",
+        "description": "A stylish mid-century modern side table with a walnut finish and tapered legs, perfect for adding retro charm to any room.",
+        "category": "Side Tables",
+        "price": "$149",
+        "image": "https://example.com/images/side_table2.jpg"
+      },
+      {
+        "id": "46",
+        "name": "Platform Storage Bed with Upholstered Headboard",
+        "description": "A contemporary platform bed with built-in storage drawers and a padded upholstered headboard, combining style and functionality.",
+        "category": "Beds",
+        "price": "$1399",
+        "image": "https://example.com/images/bed4.jpg"
+      },
+      {
+        "id": "47",
+        "name": "Modern Floor Lamp with Marble Base",
+        "description": "A modern floor lamp with a marble base and adjustable arm, providing ambient lighting and style to any room.",
+        "category": "Lamps",
+        "price": "$199",
+        "image": "https://example.com/images/lamp3.jpg"
+      },
+      {
+        "id": "48",
+        "name": "Wicker Patio Dining Chairs (Set of 4)",
+        "description": "A set of four wicker patio dining chairs with cushions, perfect for outdoor dining and gatherings.",
+        "category": "Outdoor Furniture",
+        "price": "$699",
+        "image": "https://example.com/images/patio_chairs1.jpg"
+      },
+      {
+        "id": "49",
+        "name": "Industrial Bar Cart with Wine Rack",
+        "description": "An industrial-style bar cart with a built-in wine rack and wheels for easy mobility, perfect for entertaining guests.",
+        "category": "Bar Carts",
+        "price": "$249",
+        "image": "https://example.com/images/bar_cart1.jpg"
+      },
+      {
+        "id": "50",
+        "name": "Mid-Century Modern Wall Clock",
+        "description": "A stylish mid-century modern wall clock with a wooden frame and minimalist design, adding a retro touch to any room.",
+        "category": "Decor",
+        "price": "$79",
+        "image": "https://example.com/images/clock1.jpg"
+      },
+      {
+        "id": "51",
+        "name": "Velvet Tufted Chaise Lounge",
+        "description": "An elegant velvet chaise lounge with tufted upholstery and curved silhouette, perfect for relaxation and adding sophistication to any room.",
+        "category": "Chaise Lounges",
+        "price": "$1299",
+        "image": "https://example.com/images/chaise_lounge1.jpg"
+      },
+      {
+        "id": "52",
+        "name": "Marble Top Console Table with Gold Legs",
+        "description": "A glamorous console table with a marble top and gold-finished metal legs, adding a touch of luxury to entryways or living rooms.",
+        "category": "Console Tables",
+        "price": "$799",
+        "image": "https://example.com/images/console_table2.jpg"
+      },
+      {
+        "id": "53",
+        "name": "Executive Leather Office Chair",
+        "description": "An executive-style leather office chair with high backrest, padded armrests, and ergonomic design, providing comfort and support for long hours of work.",
+        "category": "Office Chairs",
+        "price": "$599",
+        "image": "https://example.com/images/office_chair1.jpg"
+      },
+      {
+        "id": "54",
+        "name": "Modern Entertainment Center",
+        "description": "A sleek and modern entertainment center with multiple storage compartments and shelves, perfect for organizing media devices and accessories.",
+        "category": "Entertainment Centers",
+        "price": "$999",
+        "image": "https://example.com/images/entertainment_center1.jpg"
+      },
+      {
+        "id": "55",
+        "name": "Round Marble Side Table",
+        "description": "A chic round side table with a marble top and metal base, adding sophistication and functionality to living rooms or bedrooms.",
+        "category": "Side Tables",
+        "price": "$349",
+        "image": "https://example.com/images/side_table3.jpg"
+      },
+      {
+        "id": "56",
+        "name": "Upholstered Platform Bed with Storage",
+        "description": "A stylish platform bed with upholstered headboard and built-in storage drawers, combining comfort and practicality in the bedroom.",
+        "category": "Beds",
+        "price": "$1599",
+        "image": "https://example.com/images/bed5.jpg"
+      },
+      {
+        "id": "57",
+        "name": "Crystal Chandelier Pendant Light",
+        "description": "A stunning crystal chandelier pendant light with cascading crystals and chrome finish, adding glamour and sophistication to dining rooms or entryways.",
+        "category": "Lighting",
+        "price": "$899",
+        "image": "https://example.com/images/chandelier1.jpg"
+      },
+      {
+        "id": "58",
+        "name": "Wicker Patio Conversation Set",
+        "description": "A cozy patio conversation set made of wicker with plush cushions, including a loveseat, two armchairs, and a coffee table, perfect for outdoor lounging and gatherings.",
+        "category": "Outdoor Furniture",
+        "price": "$2199",
+        "image": "https://example.com/images/patio_conversation_set1.jpg"
+      },
+      {
+        "id": "59",
+        "name": "Mid-Century Modern Bar Cabinet",
+        "description": "A stylish mid-century modern bar cabinet with retro-inspired design and ample storage for liquor bottles, glassware, and bar accessories.",
+        "category": "Bar Cabinets",
+        "price": "$899",
+        "image": "https://example.com/images/bar_cabinet1.jpg"
+      },
+      {
+        "id": "60",
+        "name": "Geometric Wall Art Set",
+        "description": "A set of three geometric wall art pieces with abstract designs and vibrant colors, adding a modern touch to any room's decor.",
+        "category": "Wall Art",
+        "price": "$149",
+        "image": "https://example.com/images/wall_art1.jpg"
+      },
+      {
+        "id": "61",
+        "name": "Velvet Upholstered Accent Chair",
+        "description": "A stylish accent chair upholstered in velvet fabric with a curved backrest and tapered legs, adding a pop of color and comfort to any room.",
+        "category": "Accent Chairs",
+        "price": "$399",
+        "image": "https://example.com/images/accent_chair1.jpg"
+      },
+      {
+        "id": "62",
+        "name": "Marble Top End Table",
+        "description": "A sleek end table with a marble top and metal base, perfect for displaying lamps or decorative items beside sofas or beds.",
+        "category": "End Tables",
+        "price": "$249",
+        "image": "https://example.com/images/end_table1.jpg"
+      },
+      {
+        "id": "63",
+        "name": "Mesh Office Chair with Lumbar Support",
+        "description": "An ergonomic office chair with breathable mesh backrest, lumbar support, and adjustable features, promoting comfort and productivity during work hours.",
+        "category": "Office Chairs",
+        "price": "$279",
+        "image": "https://example.com/images/office_chair2.jpg"
+      },
+      {
+        "id": "64",
+        "name": "Rustic Wood TV Stand with Barn Doors",
+        "description": "A rustic TV stand crafted from wood with barn-style doors, offering ample storage space for media devices and accessories while adding farmhouse charm to living rooms.",
+        "category": "TV Stands",
+        "price": "$599",
+        "image": "https://example.com/images/tv_stand2.jpg"
+      },
+      {
+        "id": "65",
+        "name": "Round Marble Coffee Table",
+        "description": "A luxurious coffee table with a round marble top and metal base, creating a focal point in contemporary living rooms.",
+        "category": "Coffee Tables",
+        "price": "$599",
+        "image": "https://example.com/images/coffee_table3.jpg"
+      },
+      {
+        "id": "66",
+        "name": "Upholstered Storage Bench",
+        "description": "A versatile storage bench with upholstered seat and hidden storage compartment, offering seating and organization solutions for entryways or bedrooms.",
+        "category": "Benches",
+        "price": "$199",
+        "image": "https://example.com/images/bench2.jpg"
+      },
+      {
+        "id": "67",
+        "name": "Modern Floor Lamp with Adjustable Arm",
+        "description": "A contemporary floor lamp with a sleek design and adjustable arm, providing focused task lighting or ambient illumination in living rooms or home offices.",
+        "category": "Lamps",
+        "price": "$179",
+        "image": "https://example.com/images/lamp4.jpg"
+      },
+      {
+        "id": "68",
+        "name": "Wicker Patio Bar Set",
+        "description": "A stylish patio bar set made of wicker with a tempered glass tabletop, including a bar table and two bar stools, perfect for outdoor entertaining and relaxation.",
+        "category": "Outdoor Furniture",
+        "price": "$799",
+        "image": "https://example.com/images/patio_bar_set1.jpg"
+      },
+      {
+        "id": "69",
+        "name": "Mid-Century Modern Wine Cabinet",
+        "description": "A mid-century modern wine cabinet with built-in wine rack, storage shelves, and glassware holders, offering a stylish and functional solution for wine enthusiasts.",
+        "category": "Wine Cabinets",
+        "price": "$899",
+        "image": "https://example.com/images/wine_cabinet1.jpg"
+      },
+      {
+        "id": "70",
+        "name": "Abstract Canvas Wall Art",
+        "description": "A striking abstract canvas wall art with bold colors and textures, adding visual interest and personality to any room's decor.",
+        "category": "Wall Art",
+        "price": "$129",
+        "image": "https://example.com/images/wall_art2.jpg"
+      },
+      {
+        "id": "71",
+        "name": "Velvet Upholstered Dining Chairs (Set of 2)",
+        "description": "A set of two elegant dining chairs upholstered in velvet fabric with high backrests and sturdy wooden legs, perfect for adding luxury and comfort to dining areas.",
+        "category": "Dining Chairs",
+        "price": "$499",
+        "image": "https://example.com/images/dining_chairs1.jpg"
+      },
+      {
+        "id": "72",
+        "name": "Glass Top Nesting Tables (Set of 3)",
+        "description": "A set of three nesting tables with tempered glass tops and metal frames, offering versatile functionality and modern style for living rooms or bedrooms.",
+        "category": "Nesting Tables",
+        "price": "$299",
+        "image": "https://example.com/images/nesting_tables1.jpg"
+      },
+      {
+        "id": "73",
+        "name": "Executive Leather Desk Chair",
+        "description": "An executive-style leather desk chair with padded armrests, ergonomic design, and swivel feature, providing comfort and support for long hours of work.",
+        "category": "Office Chairs",
+        "price": "$649",
+        "image": "https://example.com/images/desk_chair1.jpg"
+      },
+      {
+        "id": "74",
+        "name": "Rustic Wood Console Table with Drawers",
+        "description": "A rustic console table crafted from wood with drawers and lower shelf, offering storage and display space while adding farmhouse charm to entryways or living rooms.",
+        "category": "Console Tables",
+        "price": "$399",
+        "image": "https://example.com/images/console_table3.jpg"
+      },
+      {
+        "id": "75",
+        "name": "Round Marble Dining Table",
+        "description": "A luxurious dining table with a round marble top and metal base, creating a sophisticated centerpiece for modern dining rooms.",
+        "category": "Dining Tables",
+        "price": "$1299",
+        "image": "https://example.com/images/dining_table2.jpg"
+      },
+      {
+        "id": "76",
+        "name": "Velvet Upholstered Storage Ottoman",
+        "description": "A stylish storage ottoman upholstered in velvet fabric with a tufted top and hidden storage compartment, offering seating and storage solutions for living rooms or bedrooms.",
+        "category": "Ottomans",
+        "price": "$199",
+        "image": "https://example.com/images/storage_ottoman1.jpg"
+      },
+      {
+        "id": "77",
+        "name": "Modern Arc Floor Lamp",
+        "description": "A contemporary arc floor lamp with a brushed steel finish and adjustable arm, providing ambient lighting and modern style to living rooms or reading nooks.",
+        "category": "Lamps",
+        "price": "$249",
+        "image": "https://example.com/images/floor_lamp1.jpg"
+      },
+      {
+        "id": "78",
+        "name": "Wicker Patio Sectional Sofa Set",
+        "description": "A spacious patio sectional sofa set made of wicker with plush cushions, including a loveseat, corner chair, armless chair, and coffee table, perfect for outdoor lounging and entertaining.",
+        "category": "Outdoor Furniture",
+        "price": "$1599",
+        "image": "https://example.com/images/patio_sectional_sofa_set1.jpg"
+      },
+      {
+        "id": "79",
+        "name": "Mid-Century Modern Bar Stool (Set of 2)",
+        "description": "A set of two mid-century modern bar stools with molded seats and tapered legs, perfect for adding retro charm and comfortable seating to kitchen islands or bars.",
+        "category": "Bar Stools",
+        "price": "$299",
+        "image": "https://example.com/images/bar_stools1.jpg"
+      },
+      {
+        "id": "80",
+        "name": "Abstract Metal Wall Sculpture",
+        "description": "An abstract metal wall sculpture with geometric shapes and textured finish, adding visual interest and modern flair to any room's decor.",
+        "category": "Wall Art",
+        "price": "$179",
+        "image": "https://example.com/images/metal_wall_sculpture1.jpg"
+      },
+      {
+        "id": "81",
+        "name": "Velvet Upholstered Dining Bench",
+        "description": "A stylish dining bench upholstered in velvet fabric with a tufted seat and sturdy wooden legs, offering versatile seating options for dining tables or entryways.",
+        "category": "Dining Benches",
+        "price": "$349",
+        "image": "https://example.com/images/dining_bench1.jpg"
+      },
+      {
+        "id": "82",
+        "name": "Glass Top Coffee Table with Wooden Base",
+        "description": "A modern coffee table with a tempered glass top and wooden base, combining sleek design and natural elements for contemporary living rooms.",
+        "category": "Coffee Tables",
+        "price": "$449",
+        "image": "https://example.com/images/coffee_table4.jpg"
+      },
+      {
+        "id": "83",
+        "name": "Mesh Back Office Chair",
+        "description": "A comfortable office chair with a breathable mesh backrest, padded seat, and adjustable features, promoting ergonomic support and productivity during work hours.",
+        "category": "Office Chairs",
+        "price": "$199",
+        "image": "https://example.com/images/office_chair3.jpg"
+      },
+      {
+        "id": "84",
+        "name": "Rustic Wood Bookcase with Ladder",
+        "description": "A rustic bookcase crafted from wood with a ladder for easy access to top shelves, offering ample storage and display space while adding farmhouse charm to living rooms or studies.",
+        "category": "Bookcases",
+        "price": "$799",
+        "image": "https://example.com/images/bookcase1.jpg"
+      },
+      {
+        "id": "85",
+        "name": "Rectangular Glass Dining Table",
+        "description": "A sleek dining table with a rectangular glass top and metal legs, creating a modern centerpiece for dining rooms or kitchens.",
+        "category": "Dining Tables",
+        "price": "$999",
+        "image": "https://example.com/images/dining_table3.jpg"
+      },
+      {
+        "id": "86",
+        "name": "Upholstered Storage Bench with Shoe Rack",
+        "description": "A multifunctional storage bench upholstered in fabric with a cushioned seat, shoe rack, and storage compartments, providing seating and organization solutions for entryways or mudrooms.",
+        "category": "Benches",
+        "price": "$279",
+        "image": "https://example.com/images/storage_bench1.jpg"
+      },
+      {
+        "id": "87",
+        "name": "Modern Table Lamp with Fabric Shade",
+        "description": "A contemporary table lamp with a metal base and fabric shade, offering soft and diffused lighting for bedside tables or desks.",
+        "category": "Lamps",
+        "price": "$129",
+        "image": "https://example.com/images/table_lamp2.jpg"
+      },
+      {
+        "id": "88",
+        "name": "Wicker Patio Swing Chair",
+        "description": "A cozy patio swing chair made of wicker with plush cushions and canopy, perfect for outdoor relaxation and enjoying sunny days in the backyard.",
+        "category": "Outdoor Furniture",
+        "price": "$699",
+        "image": "https://example.com/images/patio_swing_chair1.jpg"
+      },
+      {
+        "id": "89",
+        "name": "Mid-Century Modern Desk",
+        "description": "A sleek desk with a mid-century modern design, featuring clean lines, tapered legs, and ample workspace, perfect for home offices or study areas.",
+        "category": "Desks",
+        "price": "$599",
+        "image": "https://example.com/images/desk2.jpg"
+      },
+      {
+        "id": "90",
+        "name": "Abstract Canvas Painting",
+        "description": "An abstract canvas painting with bold strokes and vibrant colors, adding a contemporary and artistic touch to any room's decor.",
+        "category": "Wall Art",
+        "price": "$199",
+        "image": "https://example.com/images/canvas_painting1.jpg"
+      },
+      {
+        "id": "91",
+        "name": "Fabric Upholstered Dining Chairs (Set of 4)",
+        "description": "A set of four dining chairs upholstered in fabric with padded seats and solid wood legs, offering comfort and style for dining rooms or kitchen tables.",
+        "category": "Dining Chairs",
+        "price": "$599",
+        "image": "https://example.com/images/dining_chairs2.jpg"
+      },
+      {
+        "id": "92",
+        "name": "Marble Top Sideboard",
+        "description": "A luxurious sideboard with a marble top and wood frame, featuring storage cabinets and drawers, perfect for dining rooms or living areas.",
+        "category": "Sideboards",
+        "price": "$1199",
+        "image": "https://example.com/images/sideboard2.jpg"
+      },
+      {
+        "id": "93",
+        "name": "Ergonomic Mesh Office Chair",
+        "description": "An ergonomic office chair with a breathable mesh backrest, adjustable lumbar support, and swivel feature, promoting comfort and productivity during work hours.",
+        "category": "Office Chairs",
+        "price": "$299",
+        "image": "https://example.com/images/office_chair4.jpg"
+      },
+      {
+        "id": "94",
+        "name": "Rustic Wood End Table with Metal Legs",
+        "description": "A rustic end table crafted from wood with metal legs and a bottom shelf, offering storage and display space while adding industrial charm to living rooms or bedrooms.",
+        "category": "End Tables",
+        "price": "$179",
+        "image": "https://example.com/images/end_table2.jpg"
+      },
+      {
+        "id": "95",
+        "name": "Rectangular Glass Coffee Table",
+        "description": "A contemporary coffee table with a rectangular glass top and chrome legs, creating a sleek and modern centerpiece for living rooms.",
+        "category": "Coffee Tables",
+        "price": "$499",
+        "image": "https://example.com/images/coffee_table5.jpg"
+      },
+      {
+        "id": "96",
+        "name": "Upholstered Storage Ottoman Bench",
+        "description": "A versatile storage ottoman bench upholstered in fabric with a tufted top and spacious interior compartment, offering seating and storage solutions for living rooms or bedrooms.",
+        "category": "Benches",
+        "price": "$249",
+        "image": "https://example.com/images/storage_ottoman2.jpg"
+      },
+      {
+        "id": "97",
+        "name": "Industrial Pendant Light with Edison Bulb",
+        "description": "An industrial-style pendant light with a metal cage shade and vintage Edison bulb, adding a rustic and nostalgic touch to kitchens or dining areas.",
+        "category": "Lighting",
+        "price": "$129",
+        "image": "https://example.com/images/pendant_light1.jpg"
+      },
+      {
+        "id": "98",
+        "name": "Wicker Patio Chaise Lounge",
+        "description": "A comfortable patio chaise lounge made of wicker with adjustable reclining positions and weather-resistant cushions, perfect for sunbathing and outdoor relaxation.",
+        "category": "Outdoor Furniture",
+        "price": "$399",
+        "image": "https://example.com/images/patio_chaise_lounge1.jpg"
+      },
+      {
+        "id": "99",
+        "name": "Mid-Century Modern Bookshelf",
+        "description": "A stylish bookshelf with a mid-century modern design, featuring open shelves and tapered legs, perfect for displaying books, plants, or decorative items.",
+        "category": "Bookshelves",
+        "price": "$449",
+        "image": "https://example.com/images/bookshelf4.jpg"
+      },
+      {
+        "id": "100",
+        "name": "Abstract Metal Wall Decor",
+        "description": "An abstract metal wall decor with geometric shapes and brushed finish, adding texture and contemporary style to any room's decor.",
+        "category": "Wall Decor",
+        "price": "$149",
+        "image": "https://example.com/images/wall_decor1.jpg"
+      }
+   ]
+  }
+  
