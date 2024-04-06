@@ -6,7 +6,7 @@ import LoungeLamp   from "./assets/LoungeLamp.jpg";
 import LoungeTable from "./assets/LoungeTable.jpg";
 import deleted from  "./assets/deleted.png";
 import map from "./assets/map.png";
-const Checkout=()=>{
+const Checkout=({navigation})=>{
     //  const[Checkout,setCheckout]=useState();
     //  const onPress= ()=>setCheckout(prevCheckout=>prevCheckout)
      return(
@@ -62,15 +62,20 @@ const Checkout=()=>{
             </View>
             
             <Text  style={style.Shipping}> Choose Shipping </Text>
+           
       
                <View  style={style.chooes}>
                    <View  style={{flexDirection:'row'}} >
+                   <TouchableOpacity onPress={()=>navigation.navigate('ChooseShipping')}>
                    <Image source={map}   style={{width:30,height:30,marginLeft:10,marginTop:20,padding:5,backgroundColor:'#FEFEFF'}}/>
+                   </TouchableOpacity>
                    <Text style={style.Home}>Choose Shiping Type</Text>
 
                    </View>
                    </View>
+                    <TouchableOpacity  onPress={()=>navigation.navigate('Coupons')}>
                    <Text  style={style.Shipping}> Apply Coupon </Text>
+                   </TouchableOpacity>
       
       <View  style={style.chooes}>
           <View  style={{flexDirection:'row'}} >

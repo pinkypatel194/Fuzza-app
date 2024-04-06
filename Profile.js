@@ -29,7 +29,9 @@ const Profile=({navigation,route})=>{
             </TouchableOpacity>
 
             <Text  style={{color:'#FEFEFF',marginLeft:20,marginTop:10}}> UserName:{name?.Name}</Text>
+              <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
              <Image  source={chackout} style={{width:30,height:30,marginLeft:10,marginTop:20,backgroundColor:'#FEFEFF',marginLeft:150}}/>
+             </TouchableOpacity>
               {/* <View style={style.border}></View> */}
             </View>
             <View style={style.border}></View>

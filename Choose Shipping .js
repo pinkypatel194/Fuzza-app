@@ -1,19 +1,21 @@
 import  React from "react";
-import { View,Text,Image,StyleSheet, ScrollView} from "react-native";
+import { View,Text,Image,StyleSheet, ScrollView, TouchableOpacity} from "react-native";
 import Economy from  "./assets/Economy.png";
 import Regular  from "./assets/Regular.png";
 import Cargo from  "./assets/Cargo.png";
 import  Express from "./assets/Express.png";
 
 
-const  ChooseShipping =()=>{
+const  ChooseShipping =({navigation})=>{
           return(
                 <View style={style.Color}>
                <View >
                   <Text style={style.ChooseShipping}>Choose Shipping</Text>
                 <View style={style.box}>
                 <View  style={{flexDirection:'row'}}>
+                  <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
                   <Image  source={Economy}  style={{height:40,width:40,backgroundColor:'#FEFEFF',marginTop:5,marginLeft:15,borderRadius:20}}/>
+                  </TouchableOpacity>
                   <View>
                 <Text style={style.Text}>Economy                                     $10⬤ </Text>
                 <Text style={style.Text1}>Estimated Arrival, Mar 20-23</Text>
@@ -22,7 +24,9 @@ const  ChooseShipping =()=>{
                  </View>
                  <View style={style.box}>
                 <View  style={{flexDirection:'row'}}>
+                <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
                   <Image  source={Regular}  style={{height:40,width:40,backgroundColor:'#FEFEFF',marginTop:5,marginLeft:15,borderRadius:20}}/>
+                  </TouchableOpacity>
                   <View>
                 <Text style={style.Text}> Regular                                       $15⬤ </Text>
                 <Text style={style.Text1}>Estimated Arrival, Mar 20-23</Text>
@@ -31,7 +35,9 @@ const  ChooseShipping =()=>{
                   </View>    
                 <View style={style.box}>
                 <View  style={{flexDirection:'row'}}>
+                <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
                 <Image  source={Cargo}  style={{height:40,width:40,backgroundColor:'#FEFEFF',marginTop:5,marginLeft:15,borderRadius:20}}/>
+                 </TouchableOpacity>
                   <View>
                 <Text style={style.Text}>Cargo                                             $20⬤ </Text>
                 <Text style={style.Text1}>Estimated Arrival, Mar 20-23</Text>
@@ -40,12 +46,16 @@ const  ChooseShipping =()=>{
                  </View>
                 <View style={style.box}>
                 <View  style={{flexDirection:'row'}}>
+                <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
                 <Image  source={Express}  style={{height:40,width:40,backgroundColor:'#FEFEFF',marginTop:5,marginLeft:15,borderRadius:20}}/>
+                </TouchableOpacity>
                   <View>
                 <Text style={style.Text}>Express                                           $20⬤</Text>
                 <Text style={style.Text1}>Estimated Arrival, Mar 20-23            </Text>
                 <View style={style.box1}>
+                  <TouchableOpacity>
                      <Text style={style.Text2}>Apply</Text>
+                     </TouchableOpacity>
                     </View>
                  </View> 
                   </View>  

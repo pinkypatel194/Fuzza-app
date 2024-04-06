@@ -1,8 +1,8 @@
 import  React from "react";
-import { View,Text,StyleSheet, ScrollView,Image} from "react-native";
+import { View,Text,StyleSheet, ScrollView,Image, TouchableOpacity} from "react-native";
 import off from "./assets/off.png"
 
-const  Coupons =()=>{
+const  Coupons =({navigation})=>{
     return(
           <ScrollView>
          <View style={style.Color}>
@@ -14,7 +14,9 @@ const  Coupons =()=>{
              <Text style={style.Text}>Google Pay</Text>
              <Text  style={style.Text1}>Buy 1 phone and get 10% off secound phone.</Text>
               <Text  style={style.Text2}>  #GOOGLE20</Text>
+              <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
               <Text style={style.Text3}>apply</Text>   
+              </TouchableOpacity>
                </View>
              </View>
              </View>
@@ -25,7 +27,9 @@ const  Coupons =()=>{
              <Text style={style.Text}>Google Pay</Text>
              <Text  style={style.Text1}>Buy 1 phone and get 10% off secound phone.</Text>
               <Text  style={style.Text2}>  #GOOGLE20</Text>
+              <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
               <Text style={style.Text3}>apply</Text>   
+              </TouchableOpacity>
                </View>
              </View>
              </View>
@@ -36,7 +40,9 @@ const  Coupons =()=>{
              <Text style={style.Text}>Google Pay</Text>
              <Text  style={style.Text1}>Buy 1 phone and get 10% off secound phone.</Text>
               <Text  style={style.Text2}>  #GOOGLE20</Text>
+              <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
               <Text style={style.Text3}>apply</Text>   
+              </TouchableOpacity>
                </View>
              </View>
              </View>
@@ -47,7 +53,9 @@ const  Coupons =()=>{
              <Text style={style.Text}>Google Pay</Text>
              <Text  style={style.Text1}>Buy 1 phone and get 10% off secound phone.</Text>
               <Text  style={style.Text2}>  #GOOGLE20</Text>
+              <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
               <Text style={style.Text3}>apply</Text>   
+              </TouchableOpacity>
                </View>
              </View>
              </View>
@@ -58,7 +66,9 @@ const  Coupons =()=>{
              <Text style={style.Text}>Google Pay</Text>
              <Text  style={style.Text1}>Buy 1 phone and get 10% off secound phone.</Text>
               <Text  style={style.Text2}>  #GOOGLE20</Text>
+              <TouchableOpacity onPress={()=>navigation.navigate('Checkout')}>
               <Text style={style.Text3}>apply</Text>   
+              </TouchableOpacity>  
                </View>
              </View>
              </View>

@@ -15,7 +15,9 @@ import AddNewAddress from './Add New Address';
 import paymentsuccessfully  from "./paymentsuccessfully";
 import AddNewCard from "./Add New Card";
 import ProfileDetails from "./ProfileDetails";
-
+import Checkout   from "./Checkout";
+import Coupons from "./Coupons";
+import ChooseShipping from "./Choose Shipping "
 
 
  const  App=()=> {
@@ -36,6 +38,10 @@ import ProfileDetails from "./ProfileDetails";
            <Stack.Screen name="paymentsuccessfully"    component={paymentsuccessfully} options={{headerShown:false}}/>
            <Stack.Screen name="Add New Card"     component={AddNewCard}  options={{headerShown:false}}/>
            <Stack.Screen name="ProfileDetails"   component={ProfileDetails}  options={{headerShown:false}}/>
+           <Stack.Screen name="Checkout"   component={Checkout}  options={{headerShown:false}}/>
+           <Stack.Screen name="Coupons"   component={Coupons}  options={{headerShown:false}}/>
+           <Stack.Screen name="ChooseShipping"   component={ChooseShipping}  options={{headerShown:false}}/>
+           
          </Stack.Navigator>
          
          </NavigationContainer>                   
