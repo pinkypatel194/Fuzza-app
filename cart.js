@@ -1,220 +1,264 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, TextInput } from 'react-native';
-import data from './data'; 
-import arrow from './assets/back.png';
-import discount from './assets/discount.png';
-import freeDelivery from './assets/FreeDelivery.png';
-import retrn1 from './assets/return.png';
-import star from './assets/starr.png';
+import React, { useState } from "react";
+import { View, StyleSheet, ScrollView, Image, Text, TouchableOpacity } from "react-native";
+import LoungeChair from "./assets/chair5.png";
+import LoungeLamp from "./assets/Lamps5.png";
+import LoungeTable from "./assets/CoffeeTables5.png";
+import deleted from "./assets/deleted.png";
+import bule from "./assets/buleround.png";
+import dec from "./assets/-.png";
+import inc from "./assets/+.png";
+import brown from "./assets/brownround.png";
+import balck from "./assets/balckround.png";
+import { useNavigation } from "@react-navigation/native";
 
-const ProductDetails = ({ route }) => {
-  const { productId } = route.params;
-  const product = data.items.find(item => item.id === productId);
+const Cart = () => {
+  const navigation = useNavigation();
 
-  const renderRatingStars = (rating) => {
-    const stars = [];
+  const [items, setItems] = useState([
+    { name: "Lounge Chair", quantity: 1, image: LoungeChair, color: bule, price: 130 },
+    { name: "Lounge Lamp", quantity: 1, image: LoungeLamp, color: balck, price: 30 },
+    { name: "Lounge Table", quantity: 1, image: LoungeTable, color: brown, price: 150 }
+  ]);
 
-    for (let i = 1; i <= 5; i++) {
-      if (i <= rating) {
-        stars.push(<Image key={i} source={star} style={styles.starIcon} />);
-      } else if (i - 0.5 === rating) {
-        stars.push(<Image key={i} source={star} style={[styles.starIcon, { width: 15 }]} />);
-      } else {
-        stars.push(<Image key={i} source={star} style={[styles.starIcon, { opacity: 0.3 }]} />);
-      }
+  const [totalPrice, setTotalPrice] = useState(210.00);
+
+  const incrementQuantity = (index) => {
+    const updatedItems = [...items];
+    updatedItems[index].quantity += 1;
+    setItems(updatedItems);
+    updateTotalPrice(updatedItems);
+  };
+
+  const decrementQuantity = (index) => {
+    const updatedItems = [...items];
+    if (updatedItems[index].quantity > 1) {
+      updatedItems[index].quantity -= 1;
+      setItems(updatedItems);
+      updateTotalPrice(updatedItems);
     }
-    return stars;
+  };
+
+  const removeItem = (index) => {
+    const updatedItems = [...items];
+    updatedItems.splice(index, 1);
+    setItems(updatedItems);
+    updateTotalPrice(updatedItems);
+  };
+
+  const updateTotalPrice = (updatedItems) => {
+    let total = 0;
+    updatedItems.forEach(item => {
+      total += item.quantity * item.price;
+    });
+    setTotalPrice(total);
+  };
+
+  const handleCheckout = () => {
+    navigation.navigate("checkout");
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.productContainer}>
-        {product && (
-          <>
-            <View style={styles.header}>
-              <Image source={arrow} style={styles.arrowIcon} />
-              <Text style={styles.heading}>{product.category}</Text>
-            </View>
-            <Image source={product.image} style={styles.productImage} />
-            <Text style={styles.divider}>-----------------------------------------------------</Text>
-            <View style={styles.detailsContainer}>
-              <View style={styles.productInfo}>
-                <Text style={styles.productName}>{product.name}</Text>
-                <Image source={discount} style={styles.discount} />
-                <Text style={styles.discountPrice}>{product.discount} off</Text>
-              </View>
-              <View style={styles.ratingContainer}>{renderRatingStars(product.rating)}</View>
-              <Text style={styles.reviews}>158 Reviews</Text>
-              <Text style={styles.wrongPrice}>{product.wrongprice}</Text>
-              <View style={styles.productNo}>
-                <Text style={styles.decrement}>-</Text>
-                <Text style={styles.productNumber}>1</Text>
-                <Text style={styles.increment}>+</Text>
-              </View>
-              <Text style={styles.description}>{product.description}</Text>
-              <TextInput
-                style={styles.pincode}
-                placeholder='Pincode'
-                placeholderTextColor={'#FFFFFF'}
-              />
-              <Text style={styles.checkDelivery}>Check Delivery</Text>
-              <View style={styles.servicesContainer}>
-                <View style={styles.serviceItem}>
-                  <Image source={freeDelivery} style={styles.serviceIcon} />
-                  <Text style={styles.serviceText}>COD Available</Text>
-                </View>
-                <View style={styles.serviceItem}>
-                  <Image source={retrn1} style={styles.serviceIcon} />
-                  <Text style={styles.serviceText}>21 Days Return</Text>
+    <View style={style.Color}>
+      <ScrollView>
+        <Text style={style.continue}>cart</Text>
+        {items.map((item, index) => (
+          <View style={style.box} key={index}>
+            <View style={{ flexDirection: 'row' }}>
+              <View style={style.box1}>
+                <View style={{ flexDirection: 'row' }}>
+                  <Image source={item.image} style={{ height: 75, width: 70, marginTop: 20, marginLeft: 15, padding: 10 }} />
                 </View>
               </View>
+
+              <Text style={style.text}>{item.name}</Text>
+              <Text style={style.text1}>Qty : {item.quantity}</Text>
+              <Image source={item.color} style={style.buleround} />
+              <TouchableOpacity onPress={() => removeItem(index)} style={style.deleteButton}>
+                <Image source={deleted} style={{ height: 10, width: 10, marginLeft: 90, padding: 10 }} />
+              </TouchableOpacity>
+              <View style={{ flexDirection: 'row' }}>
+                <Text style={style.text2}>${item.price}</Text>
+              </View>
+              <Text style={style.worngprice}>$160</Text>
+              </View>
+            <Text style={{ color: '#F5FCFF', marginTop: -20, marginLeft: 40 }}>{item.quantity}</Text>
+            <View style={style.background1}>
+              <TouchableOpacity onPress={() => decrementQuantity(index)}>
+                <View style={style.round}>
+                  <Image source={dec} style={{ height: 2, width: 10, marginTop: 10, marginLeft: 5 }} />
+                </View>
+              </TouchableOpacity>
+                <View style={style.detailsContainer}>
+              <Text style={{ color: '#F5FCFF', marginTop: -20, marginLeft: 40 }}>{item.quantity}</Text>
             </View>
-          </>
-        )}
+            <TouchableOpacity onPress={() => incrementQuantity(index)}>
+                <View style={style.round1}>
+                  <Image source={inc} style={{ height: 10, width: 10, marginTop: 5, marginLeft: 5 }} />
+                </View>
+              </TouchableOpacity>
+            </View>
+          </View>
+        ))} 
+      </ScrollView>
+      <View style={style.boxcheckout}>
+        <Text style={style.font}>Total Price: ${totalPrice.toFixed(2)}</Text>
+        <TouchableOpacity onPress={()=>handleCheckout()}>
+        <Text  style={style.click}>Checkout</Text>
+        </TouchableOpacity>
       </View>
-    </ScrollView>
-  );
-};
+    </View>
+  )
+}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#122636',
-  },
-  starIcon: {
-    width: 20,
-    height: 20,
-    marginRight: 5,
-  },
-  discount: {
-    marginLeft: 110,
-    marginTop: 1,
-  },
-  discountPrice: {
-    color: '#E93030',
-    fontSize: 16,
-    marginTop: 4,
-    marginLeft: -52,
-    fontWeight: 'bold',
-  },
-  header: {
-    flexDirection: 'row',
-    marginTop: 20,
-    marginLeft: 2,
-  },
-  arrowIcon: {
-    height: 30,
-    width: 30,
-    marginTop: 15,
-    marginLeft: -180,
-  },
-  heading: {
-    color: '#F5FCFF',
-    fontSize: 19,
-    textAlign: 'center',
-    marginLeft: 15,
-    marginTop: 19,
-  },
-  productContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  productImage: {
-    width: 360,
-    height: 260,
-  },
-  divider: {
-    color: '#fff',
-    fontSize: 25,
-    marginTop: 1,
-  },
-  detailsContainer: {
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-  },
-  productInfo: {
-    flexDirection: 'row',
-  },
-  productName: {
-    color: '#F5FCFF',
-    fontWeight: 'bold',
-    fontSize: 12,
-    marginTop:-10,
-    marginLeft: -2,
-  },
-  ratingContainer: {
-    flexDirection: 'row',
-    marginTop: -15,
-  },
-  reviews: {
-    color: '#D9D9D9',
-    fontSize: 16,
-    marginTop: 2,
-  },
-  wrongPrice: {
-    color: '#D9D9D9',
-    fontSize: 12,
-    textDecorationLine: 'line-through',
-    marginTop: -5,
-  },
-  productNo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 10,
-  },
-  decrement: {
-    color: '#F5FCFF',
-    fontWeight: 'bold',
-    fontSize: 25,
-  },
-  productNumber: {
-    color: '#F5FCFF',
-    fontSize: 20,
-    marginHorizontal: 20,
-  },
-  increment: {
-    color: '#F5FCFF',
-    fontWeight: 'bold',
-    fontSize: 25,
-  },
-  description: {
-    color: '#F5FCFF',
-    fontSize: 12,
-    marginTop: 10,
-  },
-  pincode: {
-    borderWidth: 2,
-    height: 45,
-    width: '100%',
-    borderRadius: 10,
-    borderColor: '#B8BEC3',
-    paddingLeft: 20,
-    color: '#D9D9D9',
-    marginTop: 10,
-  },
-  checkDelivery: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    marginTop: 10,
-  },
-  servicesContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 20,
-  },
-  serviceItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  serviceIcon: {
-    height: 20,
-    width: 20,
-    marginRight: 10,
-  },
-  serviceText: {
-    color: '#FFFFFF',
-    fontSize: 12,
-  },
-});
-
-export default ProductDetails;
+const style = StyleSheet.create({
+ continue:{
+                marginTop:35,
+                marginLeft:20,
+                padding:5,
+                color:'white',
+                fontSize:15,
+                 textAlign:'center',
+                justifyContent:'center',
+            },
+            Color:{
+                backgroundColor:'#07141F',
+                   flex:1,
+                 },
+              box:{
+                  height:130,
+                  width:340,
+                   backgroundColor:'#122636',
+                    marginLeft:10,
+                   marginTop:20,
+                   padding:10,
+                   borderRadius:10,
+        
+              },
+            box1:{
+                 height:98,
+                 width:90,
+                 backgroundColor:'#1F303E',
+                 borderRadius:10,   
+            } ,
+            text :{
+                  marginLeft:20,
+                   color:'#FEFEFF',
+                   fontSize:14,
+                   fontWeight:'bold',
+            },
+            bule:{
+                    marginTop:25,marginLeft:5,
+                    color:'#D9D9D9'
+            },
+            text1:
+            {
+                marginLeft:-82,
+                marginTop:25,
+                   color:'#FEFEFF',
+                   fontSize:14,
+                   fontWeight:'bold',
+                 
+            },
+            buleround:{
+                     marginTop:27,
+                     marginLeft:25
+            },
+            text2:{
+                marginLeft:-190,
+                marginTop:80,
+                   color:'#FEFEFF',
+                   fontSize:14,
+                   fontWeight:'bold',
+                 
+            },
+           
+            box2 :{
+                height:70,
+                width:360,
+                 backgroundColor:'#122636',
+                 marginTop:130,
+                 padding:10,
+            },
+            worngprice:{
+                marginLeft:-150,
+                marginTop:83,
+                fontSize:10,
+                color:'#D9D9D9',
+                textDecorationLine:'line-through'
+        
+            },dicrement:{
+                fontSize:25,
+                color: "#F5FCFF",
+                fontWeight: 'bold',
+                marginTop:10,
+                marginLeft:20,
+                lineHeight: 30
+            },productnumber:{
+                marginTop:10,marginLeft:30,
+                fontSize:20,
+                color:'#F5FCFF', 
+            },increment:{
+                marginTop:10,
+                marginLeft:30,
+                color: "#F5FCFF",
+                fontWeight: 'bold',
+                fontSize:25,
+                lineHeight: 30 
+            },
+            background1:{
+                borderRadius:50,
+                height:30,width:90,
+                marginTop:-25,
+                marginLeft:230,
+                backgroundColor:'#07141F'
+            },
+            round:{
+                borderRadius:50,
+                height:20,width:20,
+                marginTop:5,
+                marginLeft:10,
+                backgroundColor:'#122636',
+                color:'#F5FCFF',fontSize:20,
+            },
+            round1:{
+                borderRadius:50,
+                height:20,width:20,
+                marginTop:-18,
+                marginLeft:60,
+                backgroundColor:'#F5FCFF'
+            }, 
+            boxcheckout:{
+                height:100,
+                width:400,
+                 backgroundColor:'#122636',
+                 marginTop:130,
+                 padding:10,
+            },
+            font:
+            {
+              color:'#FEFEFF',
+                marginLeft:10,
+                fontSize:15,
+                marginTop:20
+            },
+            pricecheckout:{
+                height:71,
+                width:100, 
+                fontSize:20,
+                color:'#FEFEFF',
+                marginLeft:10,
+                marginTop:-40
+            },
+            click:{
+                marginLeft:180,
+                backgroundColor:"#FEFEFF",
+                height:50,
+                width:150,
+                textAlign:'center',
+                paddingTop:15,
+                borderRadius:6,
+                marginTop:-30
+            }
+     
+})
+export default Cart

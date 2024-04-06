@@ -3,6 +3,7 @@ import { View,Text,Image,StyleSheet, ScrollView} from "react-native";
 import arrow from './assets/back 1.png'
 import { RadioButton ,Checkbox} from 'react-native-paper'; 
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
 
 const  Colorfilter=()=>{
         const [checkedOptions, setCheckedOptions] = useState({
@@ -20,12 +21,22 @@ const  Colorfilter=()=>{
             [option]: !prevState[option]
         }));
     };
+    const navigation =useNavigation()
+
+    const handleapply=()=>{
+        navigation.navigate('home1')
+    }
+    const handlefilter=()=>{
+        navigation.navigate('filters')
+    }
+    const handlematerial=()=>{
+        navigation.navigate('matetials')
+    }
     return(
        
     <View style={styles.con}> 
          <ScrollView>
          <View style={{flexDirection:'row'}}> 
-              <Image source={arrow} style={styles.arrowicon}/>
               <Text style={styles.heading}> Filter </Text></View>
               <View style={styles.border}></View>
               <View style={styles.radioGroup}> 
@@ -90,26 +101,27 @@ const  Colorfilter=()=>{
 			</View> 
               <View style={styles.longbox}>
                <View style={styles.box}>
+                <TouchableOpacity onPress={()=>handlefilter()}>
                    <Text style={{color:"#FFFFFF"}}>Sort By</Text>
+                   </TouchableOpacity>
                </View>
                <View style={styles.box}>
                    <Text style={{color:"#FFFFFF"}}>Color</Text>
                </View>
                <View style={styles.box}>
-                   <Text style={{color:"#FFFFFF"}}>Price</Text>
-               </View>
-               <View style={styles.box}>
+                <TouchableOpacity onPress={()=>handlematerial()}>
                    <Text style={{color:"#FFFFFF"}}>Material</Text>
+                   </TouchableOpacity>
                </View>
               </View>
               <View style={{flexDirection:'row'}}>
                   <View style={styles.box2}>
-                  <TouchableOpacity >
+                  <TouchableOpacity onPress={()=>handleapply()}>
                         <Text style={styles.text2}>Clear Filter</Text>
                 </TouchableOpacity>
                   </View>
                   <View style={styles.box3}>
-                    <TouchableOpacity > 
+                    <TouchableOpacity onPress={()=>handleapply()} > 
                         <Text style={styles.text3}>Apply</Text>
                 </TouchableOpacity>
                   </View>
@@ -129,7 +141,7 @@ const  Colorfilter=()=>{
             color:"#F5FCFF",
             fontWeight:'bold',
             fontSize:15,
-            marginLeft:120,
+            marginLeft:165,
             marginTop:45
         },
         arrowicon:{

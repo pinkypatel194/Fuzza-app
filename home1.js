@@ -56,6 +56,24 @@ const Home1 = () => {
     const handelfilter =()=>{
         navigation.navigate('filters')
     }
+    const handlebuddy =()=>{
+        navigation.navigate('buddy')
+    }
+    const handlebacks =()=>{
+        navigation.navigate('backschair')
+    }
+    const handlewinback =()=>{
+        navigation.navigate('winbackchair')
+    }
+    const handlebed =()=>{
+        navigation.navigate('bed')
+    }
+    const handlelampcart =()=>{
+        navigation.navigate('lampcart')
+    }
+    const handletabel =()=>{
+        navigation.navigate('tabel')
+    }
    return (
        <View style={style.con}>
         <ScrollView>
@@ -120,12 +138,12 @@ const Home1 = () => {
                 <Image source={chair} style={{width:120,height:120,margin:0,padding:8}}/>
               </View>
               <View style={style.cartround}>
-            <TouchableOpacity>        
+            <TouchableOpacity  onPress={()=>handlebuddy()}>        
                 <Image source={shoopingbag} style={style.shoopingbag}/>
              </TouchableOpacity>
 
             </View>
-              <View style={{flexDirection:'row'}}><Text style={style.buddy}>Buddy Chair</Text>
+              <View style={{flexDirection:'row'}}><Text style={style.buddy} >Buddy Chair</Text>
                <Text style={style.buddy1}>Modern saddle arms</Text>
               <Text style={style.price}>$14</Text>
               <Text style={style.worngprice}>$20</Text>
@@ -137,7 +155,11 @@ const Home1 = () => {
                 <View style={style.like}><Image source={like} style={style.likeimage}/></View>
                 <Image source={chair1} style={{width:120,height:120,margin:0,padding:8}}/>
               </View>
-              <View style={style.cartround}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+              <View style={style.cartround}>
+              <TouchableOpacity  onPress={()=>handlebacks()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+              </View>
               <View style={{flexDirection:'row'}}><Text style={style.buddy}>backs chiar</Text>
                <Text style={style.buddy1}>Modern saddle arms</Text>
               <Text style={style.price}>$15</Text>
@@ -159,7 +181,11 @@ const Home1 = () => {
             <Text style={style.pricewin}>$25</Text>
             <Image source={star} style={style.star1} />
             <Text style={style.startext}>4.5</Text>
-            <View style={style.cartround1}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+            <View style={style.cartround1}>
+                <TouchableOpacity onPress={()=>handlewinback()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
             </View>
            </View>
            <View style={{flexDirection:'row'}}>
@@ -171,7 +197,11 @@ const Home1 = () => {
             <Text style={style.pricewin}>$999</Text>
             <Image source={star} style={style.star1} />
             <Text style={style.startext}>4.5</Text>
-            <View style={style.cartround1}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+            <View style={style.cartround1}>
+                <TouchableOpacity onPress={()=>handlebuddy()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
             </View>
            </View>
            <View style={{flexDirection:'row'}}>
@@ -183,7 +213,11 @@ const Home1 = () => {
             <Text style={style.pricewin}>$37</Text>
             <Image source={star} style={style.star1} />
             <Text style={style.startext}>4.5</Text>
-            <View style={style.cartround1}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+            <View style={style.cartround1}>
+                <TouchableOpacity onPress={()=>handlebacks()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
             </View>
            </View>
            <View style={{flex:1}}>
@@ -201,6 +235,7 @@ const Home1 = () => {
             <Text style={style.offerzone}>Offer Zone </Text>
             <View style={{flexDirection:'row'}}> 
             <View style={{flexDirection:'row'}}>
+                <TouchableOpacity onPress={()=>handleCartschair()}>
             <View style={style.offerzonecart}><View style={style.offerzonecartstyle}>
             <Image source={loung} style={{width:50,height:50,marginTop:-2,marginLeft:-2}}/>
             </View>
@@ -210,8 +245,10 @@ const Home1 = () => {
             <Text style={style.fivestar}>4.9</Text>
             <Text style={style.offerzoneprice}>$25</Text>
             </View>
+            </TouchableOpacity>
            </View>
            <View style={{flexDirection:'row'}}>
+            <TouchableOpacity onPress={()=>handletabel()}>
             <View style={style.offerzonecart}><View style={style.offerzonecartstyle}>
             <Image source={tabel} style={{width:50,height:50,margin:0,marginTop:-2,marginLeft:-2}}/>
             </View>
@@ -221,10 +258,12 @@ const Home1 = () => {
             <Text style={style.fivestar}>4.2</Text>
             <Text style={style.offerzoneprice}>$37</Text>
             </View>
+            </TouchableOpacity>
            </View>
            </View>
            <View style={{flexDirection:'row'}}>
            <View style={{flexDirection:'row'}}>
+            <TouchableOpacity onPress={()=>handlebacks()}>
             <View style={style.offerzonecart}><View style={style.offerzonecartstyle}>
             <Image source={swing} style={{width:50,height:50,margin:0,marginTop:-2,marginLeft:-2}}/>
             </View>
@@ -234,8 +273,10 @@ const Home1 = () => {
             <Text style={style.fivestar}>4.6</Text>
             <Text style={style.offerzoneprice}>$39</Text>
             </View>
+            </TouchableOpacity>
            </View>
            <View style={{flexDirection:'row'}}>
+            <TouchableOpacity onPress={()=>handletabel()}>
             <View style={style.offerzonecart}><View style={style.offerzonecartstyle}>
             <Image source={dining} style={{width:50,height:50,margin:0,marginTop:-2,marginLeft:-2}}/>
             </View>
@@ -245,6 +286,7 @@ const Home1 = () => {
             <Text style={style.fivestar}>4.8</Text>
             <Text style={style.offerzoneprice}>$40</Text>
             </View>
+            </TouchableOpacity>
            </View>
            </View>
            </View>
@@ -254,7 +296,11 @@ const Home1 = () => {
                 <View style={style.decorecartstyle}>
                 <Image source={swingchair2} style={{width:120,height:120,margin:0,padding:8}}/>
               </View>
-              <View style={style.cartround}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+              <View style={style.cartround}>
+                <TouchableOpacity onPress={()=>handlebuddy()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
               <View style={{flexDirection:'row'}}><Text style={style.buddy}>Bubble Swing Chair</Text>
                <Text style={style.decor1}>Modern Swing Chair</Text>
               <Text style={style.decorprice}>$120</Text>
@@ -264,7 +310,11 @@ const Home1 = () => {
                 <View style={style.decorecartstyle}>
                 <Image source={loung} style={{width:120,height:120,margin:0,padding:8}}/>
               </View>
-              <View style={style.cartround}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+              <View style={style.cartround}>
+                <TouchableOpacity onPress={()=>handleCartschair()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
               <View style={{flexDirection:'row'}}><Text style={style.buddy}>Lounge Chair</Text>
                <Text style={style.decor2}>Modern Swing Chair</Text>
               <Text style={style.decorprice}>$180</Text>
@@ -277,7 +327,11 @@ const Home1 = () => {
                 <View style={style.decorecartstyle}>
                 <Image source={bedseet} style={{width:130,height:100,margin:0,padding:8}}/>
               </View>
-              <View style={style.cartround}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+              <View style={style.cartround}>
+                <TouchableOpacity onPress={()=>handlebed()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
               <View style={{flexDirection:'row'}}><Text style={style.buddy}>Double Bed Sheets</Text>
                <Text style={style.decor1}>Modern Swing Chair</Text>
               <Text style={style.decorprice}>$150</Text>
@@ -287,7 +341,11 @@ const Home1 = () => {
                 <View style={style.decorecartstyle}>
                 <Image source={light} style={{width:120,height:100,margin:0,padding:8}}/>
               </View>
-              <View style={style.cartround}><Image source={shoopingbag} style={style.shoopingbag}/></View>
+              <View style={style.cartround}>
+                <TouchableOpacity onPress={()=>handlelampcart()}>
+                <Image source={shoopingbag} style={style.shoopingbag}/>
+                </TouchableOpacity>
+                </View>
               <View style={{flexDirection:'row'}}><Text style={style.buddy}>Hangingr lig..</Text>
                <Text style={style.decor2}>Modern Swing Chair</Text>
               <Text style={style.decorprice}>$220</Text>
