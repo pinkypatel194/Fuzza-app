@@ -10,13 +10,18 @@ const  Filter=()=>{
     const handleapply=()=>{
         navigation.navigate('home1')
     }
+    const handlecolor=()=>{
+        navigation.navigate('colorfilter')
+    }
+    const handlematerial=()=>{
+        navigation.navigate('matetials')
+    }
     const [selectedValue, setSelectedValue] = useState('option1')
     return(
        
     <View style={styles.con}> 
          <ScrollView>
          <View style={{flexDirection:'row'}}> 
-              <Image source={arrow} style={styles.arrowicon}/>
               <Text style={styles.heading}> Filter </Text></View>
               <View style={styles.border}></View>
               <View style={styles.radioGroup}> 
@@ -96,13 +101,14 @@ const  Filter=()=>{
                    <Text style={{color:"#FFFFFF"}}>Sort By</Text>
                </View>
                <View style={styles.box}>
+                <TouchableOpacity onPress={()=>handlecolor()}>
                    <Text style={{color:"#FFFFFF"}}>Color</Text>
+                   </TouchableOpacity>
                </View>
                <View style={styles.box}>
-                   <Text style={{color:"#FFFFFF"}}>Price</Text>
-               </View>
-               <View style={styles.box}>
+                <TouchableOpacity onPress={()=>handlematerial()}>
                    <Text style={{color:"#FFFFFF"}}>Material</Text>
+                   </TouchableOpacity>
                </View>
               </View>
               <View style={{flexDirection:'row'}}>
@@ -132,7 +138,7 @@ const  Filter=()=>{
             color:"#F5FCFF",
             fontWeight:'bold',
             fontSize:15,
-            marginLeft:120,
+            marginLeft:165,
             marginTop:45
         },
         arrowicon:{

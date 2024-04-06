@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import {View,Text,StyleSheet,Image, TextInput, ScrollView,TouchableOpacity} from 'react-native'
-import arrow from './assets/arrow.png'
 import chair from './assets/Chairs10.png'
 import dotline from './assets/dotline.png'
 import discount from './assets/discount.png'
@@ -10,9 +9,6 @@ import cod from './assets/cod.png'
 import retrn1 from './assets/return.png'
 import cart from './assets/cart.png'
 import reviwerspic from './assets/reviewserpic.png'
-import shoopingbag from './assets/cart.png'
-import Chairs11 from './assets/Chairs11.png'
-import Chairs12 from './assets/Chairs12.png'
 const Chaircart=({navigation})=>
 {
     const [pincode, setPincode] = useState('');
@@ -38,12 +34,12 @@ const Chaircart=({navigation})=>
         navigation.navigate('addcart')
     }
 
+ 
     return(
         <View style={styles.con}>
      <ScrollView>
        <View style={{flexDirection:'row'}}> 
-       <Image source={arrow} style={styles.arrowicon}/>
-       <Text style={styles.heading}> Bed </Text></View>
+       <Text style={styles.heading}> Sofa </Text></View>
        <Image source={chair} style={styles.bedset}/>
        <Image source={dotline} style={styles.dotline}/>
        <View style={{flexDirection:'row'}}><Text style={styles.productname}>Modern round shape...</Text>
@@ -138,39 +134,7 @@ const Chaircart=({navigation})=>
         </View>
         <Text style={styles.seenmsg}>1 min ago</Text>
         <Text style={styles.comment}>The best product quality.! It's amazing, Love it...!! </Text>
-        </View> 
-        <View style={styles.similarproduct}>
-            <View style={{flexDirection:'row'}}>
-                <Text style={styles.Similartext}>Similar Products</Text>
-                <Text style={styles.viewall}>View All</Text>
-            </View>
-            <View style={{flexDirection:'row'}}>
-            <View style={styles.similarcart}>
-                <View style={styles.similarcartstyle}>
-                      <Image source={Chairs11}  style={{width:135,height:130,marginTop:-10,marginLeft:-8}}/>
-              <View style={styles.cartround}><Image source={shoopingbag} style={styles.shoopingbag}/></View>
-              <View style={{flexDirection:'row'}}><Text style={styles.buddy}>Bubble Swing Chair</Text>
-               <Text style={styles.decor1}>Modern Swing Chair</Text>
-              <View style={{flexDirection:'rpw'}}><Text style={styles.decorprice}>$120</Text>
-            <Image source={star} style={styles.star1} />
-            <Text style={styles.startext}>4.5</Text></View>
-              </View>
-                </View>
-            </View>
-            <View style={styles.similarcart}>
-                <View style={styles.similarcartstyle}>
-                      <Image source={Chairs12}  style={{width:135,height:130,marginTop:-10,marginLeft:-8}}/>
-              <View style={styles.cartround}><Image source={shoopingbag} style={styles.shoopingbag}/></View>
-              <View style={{flexDirection:'row'}}><Text style={styles.buddy}>Bubble Swing Chair</Text>
-               <Text style={styles.decor1}>Modern Swing Chair</Text>
-              <View style={{flexDirection:'rpw'}}><Text style={styles.decorprice}>$120</Text>
-            <Image source={star} style={styles.star1} />
-            <Text style={styles.startext}>4.5</Text></View>
-              </View>
-                </View>
-            </View>
-            </View>
-        </View>
+        </View>       
      </ScrollView>
       </View> 
     
@@ -186,7 +150,7 @@ const styles =StyleSheet.create({
         color:"#F5FCFF",
         fontWeight:'bold',
         fontSize:15,
-        marginLeft:100,
+        marginLeft:160,
         marginTop:45
     },
     arrowicon:{
@@ -194,13 +158,13 @@ const styles =StyleSheet.create({
         marginTop:40,fontWeight:'bold'
     },
     bedset:{
-        height:270,
+        height:250,
         width:350,
         marginLeft:15,
-        marginTop:25
+        marginTop:20    
     },
     dotline:{
-        marginTop:-20
+        marginTop:10
     },
     productname:{
         color:"#F5FCFF",
@@ -209,7 +173,7 @@ const styles =StyleSheet.create({
         marginLeft:10
     },
     discount:{
-        marginLeft:128,
+        marginLeft:125,
         marginTop:20
     },discountprice:{
         marginLeft:-55,
@@ -388,79 +352,6 @@ reviwescommnet:{
 },comment1:{
     color:'#F5FCFF',
     fontSize:12,marginLeft:20,marginTop:2
-},similarproduct:{
-    height:342.81,
-    width:380,
-    backgroundColor:'#1F303E',
-    margin:0,
-    borderRadius:10,
-    marginLeft:0,
-    borderColor:'#122636',
-    marginTop:20
 },
-Similartext:{
-    color:'#F5FCFF',
-    marginTop:20,marginLeft:20,
-    fontSize:15
-},
-viewall:{
-     marginLeft:155,
-     marginTop:20,color:'#F5FCFF'
-},
-similarcart:{
-    width:170,
-    height:220,
-    backgroundColor:'#122636',
-    margin:0,
-    borderRadius:10,
-    marginLeft:6,
-    borderColor:'#122636',
-    marginTop:20
-},
-similarcartstyle:{
-          width:135,
-        height:135,
-        backgroundColor:'#1F303E',
-        padding:10,
-        marginLeft:15,
-        marginTop:10,
-        borderRadius:5,
-},
-cartround:{
-    borderWidth:15,
-    height:30,width:30,
-    borderRadius:60,
-    marginLeft:100,
-    marginTop:-15,
-    borderColor:'#F5FCFF'
-},shoopingbag:{
-    height:15,width:15,marginTop:-7,marginLeft:-7
-},buddy:{
-    color:'#F5FCFF',
-        fontWeight:'bold',
-        marginLeft:-2,
-        marginTop:2,
-        fontSize:12
-},decor1:{
-    color:'#D9D9D9',
-        marginLeft:-105,
-        marginTop:20,
-        fontSize:10
-},decorprice:{
-    marginTop:45,
-    marginLeft:-90,
-    color:'#F5FCFF',
-    fontSize:15,
-    fontWeight:'bold'
-},star1:{
-    height:15,width:15,
-        marginLeft:10,
-        marginTop:-19,
-},startext:{
-    color:'#D9D9D9',
-    fontSize:10,
-    marginTop:-12,marginLeft:30
-}
-
 })
 export default Chaircart

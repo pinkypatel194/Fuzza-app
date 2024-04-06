@@ -10,10 +10,21 @@
 // import Sofas from "./sofa";
 // import Chairs from "./chairs";
 // import Chaircart from "./chairscarts";
-// import Cart from "./addcart";
+// import Cart from "./cart";
 // import Lamp from "./lamp";
 // import TvUnits from "./tvunit";
 // import Filter from "./filters";
+// import Colorfilter from "./colorfilter";
+// import Material from "./matetials";
+// import Buddychairs from "./buddy";
+// import Backschair from "./backschair";
+// import Payment from "./payment";
+// import Cards from "./paymentsuccessfully";
+// import Winback from "./winbackchair";
+// import Bed from "./bed";
+// import Lampcart from "./lampcart";
+// import Tabel from "./tabel";
+// import paymentsuccessfully from "./paymentsuccessfully";
 // const Stack = createStackNavigator();
 // const App = () => {
 //    return (
@@ -28,10 +39,21 @@
 //         <Stack.Screen name="sofa" component={Sofas} options={{ headerShown: false}}/>
 //         <Stack.Screen name="chairs" component={Chairs} options={{ headerShown: false}}/>
 //         <Stack.Screen name="chairscarts" component={Chaircart} options={{ headerShown: false}}/>
+//         <Stack.Screen name="buddy" component={Buddychairs} options={{ headerShown: false}}/>
 //         <Stack.Screen name="addcart" component={Cart} options={{ headerShown: false}}/>
 //         <Stack.Screen name="lamp" component={Lamp} options={{ headerShown: false}}/>
 //         <Stack.Screen name="tvunit" component={TvUnits} options={{ headerShown: false}}/>
 //         <Stack.Screen name="filters" component={Filter} options={{ headerShown: false}}/>
+//         <Stack.Screen name="colorfilter" component={Colorfilter} options={{ headerShown: false}}/>
+//         <Stack.Screen name="matetials" component={Material} options={{ headerShown: false}}/>
+//         <Stack.Screen name="backschair" component={Backschair} options={{ headerShown: false}}/>
+//         <Stack.Screen name="checkout" component={Payment} options={{ headerShown: false}}/>
+//         <Stack.Screen name="paymentsuccessfully" component={paymentsuccessfully} options={{ headerShown: false}}/>
+//         <Stack.Screen name="winbackchair" component={Winback} options={{ headerShown: false}}/>
+//         <Stack.Screen name="bed" component={Bed} options={{ headerShown: false}}/>
+//         <Stack.Screen name="lampcart" component={Lampcart} options={{ headerShown: false}}/>
+//         <Stack.Screen name="tabel" component={Tabel} options={{ headerShown: false}}/>
+
 //       </Stack.Navigator>
 //   </NavigationContainer>
   
@@ -40,16 +62,20 @@
 
 // export default App
 
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Trackorder from "./track";
 
-import React from 'react';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Colorfilter from './colorfilter';
+
 
 const App = () => {
   return (
-    <GestureHandlerRootView>
-      <Colorfilter />
-    </GestureHandlerRootView>
+    <NavigationContainer>
+      <GestureHandlerRootView>
+        <Trackorder/>
+      </GestureHandlerRootView>
+    </NavigationContainer>
   );
 };
 
